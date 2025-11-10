@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto Interativo - Conceitos Front-end</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+            <h1 class="h4 mb-0">Projeto Interativo — Conceitos Básicos de Front-end</h1>
+            <p class="small-muted mb-0">HTML semântico • CSS • Bootstrap • JavaScript (DOM, eventos, funções)</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="row g-3 mb-4">
+            <article class="col-12 col-md-6">
+                <div class="card card-interactive shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Alerts e Prompt</h2>
+                        <p class="small-muted">Exemplos simples de alertas e prompt para interação imediata.</p>
+                        <div class="d-flex gap-2">
+                            <button id="btnAlert1" class="btn btn-primary">Mostrar alert 1</button>
+                            <button id="btnAlert2" class="btn btn-outline-primary">Mostrar alert 2</button>
+                            <button id="btnPrompt" class="btn btn-warning">Perguntar seu nome</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6">
+                <div class="card card-interactive shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Contador</h2>
+                        <p class="small-muted">Incrementar / decrementar / reset — manipulação DOM e funções.</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <button id="decBtn" class="btn btn-danger">-</button>
+                            <div>
+                                <div id="counter" class="fs-4">0</div>
+                                <div class="small-muted">Valor atual</div>
+                            </div>
+                            <button id="incBtn" class="btn btn-success">+</button>
+                            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="row g-3 mb-4">
+            <article class="col-12 col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Formulário - Validação</h2>
+                        <p class="small-muted">Valida entrada do usuário (if/else) e mostra mensagens.</p>
+                        <form id="sampleForm" novalidate>
+                            <div class="mb-2">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input id="inputEmail" type="email" class="form-control" placeholder="seu@exemplo.com"
+                                    required />
+                            </div>
+                            <div class="mb-2">
+                                <label for="inputAge" class="form-label">Idade</label>
+                                <input id="inputAge" type="number" class="form-control" placeholder="18" min="1"
+                                    required />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                        <div id="formMessage" class="mt-2 small-muted"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-12 col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Interação visual</h2>
+                        <p class="small-muted">Clique para alternar cor; passe o mouse para ver destaque.</p>
+                        <div id="colorBox" class="color-box mt-2">Clique para mudar cor</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="row mb-4">
+            <article class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Lista dinâmica</h2>
+                        <p class="small-muted">Adicione itens via prompt ou pelo campo. Remova clicando no X.</p>
+
+                        <div class="d-flex gap-2 mb-2">
+                            <input id="newItemInput" type="text" class="form-control" placeholder="Novo item" />
+                            <button id="addItemBtn" class="btn btn-outline-primary">Adicionar</button>
+                            <button id="addPromptBtn" class="btn btn-outline-secondary">Adicionar via prompt</button>
+                        </div>
+
+                        <ul id="itemsList" class="list-group"></ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="mt-5 py-3 border-top">
+        <div class="container text-center small-muted">Conceitos básicos de front-end • HTML, CSS,
+            Bootstrap, JS</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
