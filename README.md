@@ -1,24 +1,26 @@
 ## Projeto Interativo — Conceitos Básicos de Front-end
 
-Este é um pequeno projeto didático para demonstrar conceitos fundamentais do curso de front-end.
-O objetivo é ser simples, visual e interativo, mostrando HTML semântico, CSS básico, Bootstrap e JavaScript vanilla (DOM, eventos, condicionais, loops e funções).
+Uma demonstração didática que reúne conceitos essenciais para um curso introdutório de front-end.
+O projeto é intencionalmente simples, focado em mostrar HTML semântico, CSS (variáveis e seletores), Bootstrap e JavaScript vanilla (DOM, eventos, condicionais, loops e funções).
 
-### Como abrir
+---
 
-- Abra o arquivo `index.html` no seu navegador (duplo clique ou arraste para o browser).
-- Não precisa de servidor; é um projeto estático.
+## Como abrir
 
-### Estrutura de arquivos
+- Abra `index.html` no seu navegador (duplo clique ou arraste o arquivo para o browser). Não é necessário servidor — é um projeto estático.
 
-- `index.html` — único arquivo que contém o HTML semântico, CSS inline (pequeno) e JavaScript vanilla.
-- `styles.css` — arquivo de estilo adicional (opcional); atualmente contém variáveis CSS e regras reutilizáveis.
+## Estrutura do projeto
 
-### Funcionalidades implementadas
+- `index.html` — arquivo principal com HTML semântico, referências a `styles.css` e `js.js`.
+- `styles.css` — estilos reutilizáveis e variáveis CSS (ex.: `--primary`, `--accent`).
+- `js.js` — lógica JavaScript que implementa as interações.
 
-- Botões que disparam alerts e prompt.
+## O que está implementado
+
+- Alerts e prompt para interação imediata.
 - Contador simples (incrementar / decrementar / reset).
-- Formulário com validação de email e idade.
-- Elemento que muda de cor ao clicar e responde ao hover.
-- Lista dinâmica: adicionar (input + prompt) e remover itens.
+- Formulário com validação básica (email e idade).
+- Caixa visual que muda de cor ao clicar e responde ao hover.
+- Lista dinâmica: adicionar itens (campo ou prompt) e remover itens (botão X).
 
-Cada interação usa manipulação de DOM, event listeners, condicionais (if/else), loops e funções.
+Cada recurso foi implementado com técnicas fundamentais: seleção e alteração do DOM, event listeners (`click`, `submit`, `mouseover`/`mouseout`), condicionais (`if/else`), loops (`for`) e funções reutilizáveis.
