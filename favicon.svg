@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Favicon SVG simples: ícone estilo caderno em fundo azul -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- fundo arredondado -->
+  <rect width="64" height="64" rx="10" fill="#0d6efd"/>
+  <!-- página branca do caderno -->
+  <rect x="12" y="10" width="40" height="44" rx="4" fill="#fff"/>
+  <!-- linhas do caderno -->
+  <g stroke="#d1d5db" stroke-width="1">
+    <line x1="18" y1="20" x2="50" y2="20" />
+    <line x1="18" y1="26" x2="50" y2="26" />
+    <line x1="18" y1="32" x2="50" y2="32" />
+    <line x1="18" y1="38" x2="50" y2="38" />
+    <line x1="18" y1="44" x2="50" y2="44" />
+  </g>
+  <!-- espiral lateral (representação simples) -->
+  <g fill="#0d6efd">
+    <circle cx="14" cy="18" r="1.6" />
+    <circle cx="14" cy="24" r="1.6" />
+    <circle cx="14" cy="30" r="1.6" />
+    <circle cx="14" cy="36" r="1.6" />
+    <circle cx="14" cy="42" r="1.6" />
+  </g>
+</svg>
